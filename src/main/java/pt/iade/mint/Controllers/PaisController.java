@@ -35,7 +35,7 @@ public class PaisController {
     public Pais getPais(@PathVariable int id) {
         logger.info("Sending pais with id " + id);
         Optional<Pais> _pais = paisRepository.findById(id);
-        if (_pais.isEmpty())
+        if (_pais.isPresent())
             throw new NotFoundException("" + id, "Pais", "id");
         else
             return _pais.get();

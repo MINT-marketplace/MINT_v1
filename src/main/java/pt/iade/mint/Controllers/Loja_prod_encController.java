@@ -35,7 +35,7 @@ public class Loja_prod_encController {
     public Loja_prod_enc getLoja_prod_enc(@PathVariable int id) {
         logger.info("Sending loja_prod_enc with id " + id);
         Optional<Loja_prod_enc> _loja_prod_enc = loja_prod_encRepository.findById(id);
-        if (_loja_prod_enc.isEmpty())
+        if (_loja_prod_enc.isPresent())
             throw new NotFoundException("" + id, "Loja_prod_enc", "id");
         else
             return _loja_prod_enc.get();

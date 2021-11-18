@@ -35,7 +35,7 @@ public class FavoritosController {
     public Favoritos getFavoritos(@PathVariable int id) {
         logger.info("Sending favoritos with id " + id);
         Optional<Favoritos> _favoritos = favoritosRepository.findById(id);
-        if (_favoritos.isEmpty())
+        if (_favoritos.isPresent())
             throw new NotFoundException("" + id, "Favoritos", "id");
         else
             return _favoritos.get();

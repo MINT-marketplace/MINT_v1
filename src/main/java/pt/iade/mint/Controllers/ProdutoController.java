@@ -35,7 +35,7 @@ public class ProdutoController {
     public Produto getProduto(@PathVariable int id) {
         logger.info("Sending produto with id " + id);
         Optional<Produto> _produto = produtoRepository.findById(id);
-        if (_produto.isEmpty())
+        if (_produto.isPresent())
             throw new NotFoundException("" + id, "Produto", "id");
         else
             return _produto.get();

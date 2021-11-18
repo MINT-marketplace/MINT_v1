@@ -35,7 +35,7 @@ public class RegiaoController {
     public Regiao getRegiao(@PathVariable int id) {
         logger.info("Sending regiao with id " + id);
         Optional<Regiao> _regiao = regiaoRepository.findById(id);
-        if (_regiao.isEmpty())
+        if (_regiao.isPresent())
             throw new NotFoundException("" + id, "Regiao", "id");
         else
             return _regiao.get();
