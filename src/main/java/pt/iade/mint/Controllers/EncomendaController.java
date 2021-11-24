@@ -35,7 +35,7 @@ public class EncomendaController {
     public Encomenda getEncomenda(@PathVariable int id) {
         logger.info("Sending Encomenda with id " + id);
         Optional<Encomenda> _encomenda = encomendaRepository.findById(id);
-        if (_encomenda.isPresent())
+        if (!_encomenda.isPresent())
             throw new NotFoundException("" + id, "Encomenda", "id");
         else
             return _encomenda.get();

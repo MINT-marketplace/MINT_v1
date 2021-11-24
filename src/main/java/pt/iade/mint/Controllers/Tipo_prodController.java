@@ -35,7 +35,7 @@ public class Tipo_prodController {
     public Tipo_prod getTipo_prod(@PathVariable int id) {
         logger.info("Sending tipo_prod with id " + id);
         Optional<Tipo_prod> _tipo_prod = tipo_prodRepository.findById(id);
-        if (_tipo_prod.isPresent())
+        if (!_tipo_prod.isPresent())
             throw new NotFoundException("" + id, "Tipo_prod", "id");
         else
             return _tipo_prod.get();

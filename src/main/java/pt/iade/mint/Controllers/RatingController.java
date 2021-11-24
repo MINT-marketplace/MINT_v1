@@ -35,7 +35,7 @@ public class RatingController {
     public Rating getRating(@PathVariable int id) {
         logger.info("Sending rating with id " + id);
         Optional<Rating> _rating = ratingRepository.findById(id);
-        if (_rating.isPresent())
+        if (!_rating.isPresent())
             throw new NotFoundException("" + id, "Rating", "id");
         else
             return _rating.get();

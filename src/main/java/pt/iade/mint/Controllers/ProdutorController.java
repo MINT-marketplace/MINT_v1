@@ -34,7 +34,7 @@ public class ProdutorController {
     public Produtor getProdutor(@PathVariable int id) {
         logger.info("Sending produtor with id " + id);
         Optional<Produtor> _produtor = produtorRepository.findById(id);
-        if (_produtor.isPresent())
+        if (!_produtor.isPresent())
             throw new NotFoundException("" + id, "Produtor", "id");
         else
             return _produtor.get();

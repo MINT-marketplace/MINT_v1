@@ -35,7 +35,7 @@ public class Lista_comprasController {
     public Lista_compras getLista_compras(@PathVariable int id) {
         logger.info("Sending lista_compras with id " + id);
         Optional<Lista_compras> _lista_compras = lista_comprasRepository.findById(id);
-        if (_lista_compras.isPresent())
+        if (!_lista_compras.isPresent())
             throw new NotFoundException("" + id, "Lista_compras", "id");
         else
             return _lista_compras.get();
