@@ -44,7 +44,7 @@ public class Lista_comprasController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Lista_compras saveLista_compras(@RequestBody Lista_compras lista_compras) {
         Lista_compras savedLista_compras = lista_comprasRepository.save(lista_compras);
-        logger.info("Saving lista_compras with id " + savedLista_compras.getId());
+        logger.info("Saving lista_compras with id " + savedLista_compras.getIdlista());
         return savedLista_compras;
     }
 

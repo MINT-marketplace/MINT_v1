@@ -44,7 +44,7 @@ public class EncomendaController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Encomenda saveEncomenda(@RequestBody Encomenda encomenda) {
         Encomenda savedEncomenda = encomendaRepository.save(encomenda);
-        logger.info("Saving encomenda with id " + savedEncomenda.getId());
+        logger.info("Saving encomenda with id " + savedEncomenda.getIdencomenda());
         return savedEncomenda;
     }
 

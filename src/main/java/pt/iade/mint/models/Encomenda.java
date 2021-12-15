@@ -6,13 +6,15 @@ import javax.persistence.*;
     @Table(name="encomenda")
 public class Encomenda {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_encomenda", nullable = false)
-    private Integer id_encomenda;
+    private Integer idencomenda;
 
-    @Column(name = "id_utilizador", nullable = false)
-    private Integer idUtilizador;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_utilizador", nullable = false)
+    private Utilizador idUtilizador;
 
     @Column(name = "precot", nullable = false)
     private Integer precot;
@@ -25,19 +27,19 @@ public class Encomenda {
         this.precot = precot;
     }
 
-    public Integer getIdUtilizador() {
+    public Utilizador getIdUtilizador() {
         return idUtilizador;
     }
 
-    public void setIdUtilizador(Integer idUtilizador) {
+    public void setIdUtilizador(Utilizador idUtilizador) {
         this.idUtilizador = idUtilizador;
     }
 
-    public Integer getId() {
-        return id_encomenda;
+    public Integer getIdencomenda() {
+        return idencomenda;
     }
 
-    public void setId(Integer id_encomenda) {
-        this.id_encomenda = id_encomenda;
+    public void setId(Integer id) {
+        this.idencomenda = id;
     }
 }

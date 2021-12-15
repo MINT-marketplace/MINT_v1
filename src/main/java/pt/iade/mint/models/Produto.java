@@ -7,30 +7,28 @@ import java.math.BigDecimal;
 @Table(name = "produto")
 public class Produto {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_produto", nullable = false)
-    private Integer id_produto;
+    private Integer idproduto;
 
-    @Column(name = "id_tipo_prod", nullable = false)
-    private Integer idTipoProd;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_tipo_prod", nullable = false)
+    private Tipo_prod idTipoProd;
+
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_intolerancia", nullable = false)
+    private Intolerancia idIntolerancia;
+
+    @Column(name = "id_loja", nullable = false, length = 60)
+    private String idLoja;
 
     @Column(name = "produto_nome", nullable = false, length = 60)
     private String produtoNome;
 
     @Column(name = "produto_preco", nullable = false)
     private BigDecimal produtoPreco;
-
-    @Column(name = "produto_quantidade", nullable = false)
-    private Integer produtoQuantidade;
-
-    public Integer getProdutoQuantidade() {
-        return produtoQuantidade;
-    }
-
-    public void setProdutoQuantidade(Integer produtoQuantidade) {
-        this.produtoQuantidade = produtoQuantidade;
-    }
 
     public BigDecimal getProdutoPreco() {
         return produtoPreco;
@@ -48,19 +46,35 @@ public class Produto {
         this.produtoNome = produtoNome;
     }
 
-    public Integer getIdTipoProd() {
+    public String getIdLoja() {
+        return idLoja;
+    }
+
+    public void setIdLoja(String idLoja) {
+        this.idLoja = idLoja;
+    }
+
+    public Intolerancia getIdIntolerancia() {
+        return idIntolerancia;
+    }
+
+    public void setIdIntolerancia(Intolerancia idIntolerancia) {
+        this.idIntolerancia = idIntolerancia;
+    }
+
+    public Tipo_prod getIdTipoProd() {
         return idTipoProd;
     }
 
-    public void setIdTipoProd(Integer idTipoProd) {
+    public void setIdTipoProd(Tipo_prod idTipoProd) {
         this.idTipoProd = idTipoProd;
     }
 
-    public Integer getId_produto() {
-        return id_produto;
+    public Integer getIdproduto() {
+        return idproduto;
     }
 
-    public void setId_produto(Integer id_produto) {
-        this.id_produto = id_produto;
+    public void setId(Integer id) {
+        this.idproduto = id;
     }
 }

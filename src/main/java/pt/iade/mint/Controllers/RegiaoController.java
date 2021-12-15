@@ -44,7 +44,7 @@ public class RegiaoController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Regiao saveRegiao(@RequestBody Regiao regiao) {
         Regiao savedRegiao = regiaoRepository.save(regiao);
-        logger.info("Saving regiao with id " + savedRegiao.getId_regiao());
+        logger.info("Saving regiao with id " + savedRegiao.getIdregiao());
         return savedRegiao;
     }
 

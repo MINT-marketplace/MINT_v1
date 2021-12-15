@@ -44,7 +44,7 @@ public class PaisController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Pais savePais(@RequestBody Pais pais) {
         Pais savedPais = paisRepository.save(pais);
-        logger.info("Saving pais with id " + savedPais.getId_pais());
+        logger.info("Saving pais with id " + savedPais.getIdpais());
         return savedPais;
     }
 

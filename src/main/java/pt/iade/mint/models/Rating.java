@@ -6,49 +6,51 @@ import javax.persistence.*;
 @Table(name = "rating")
 public class Rating {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_rating", nullable = false)
-    private Integer id_rating;
+    private Integer idrating;
 
-    @Column(name = "id_utilizador", nullable = false)
-    private Integer idUtilizador;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_lista", nullable = false)
+    private Lista_compras idLista;
 
-    @Column(name = "id_produto", nullable = false)
-    private Integer idProduto;
+    @Column(name = "rateloja", nullable = false)
+    private Double rateloja;
 
-    @Column(name = "rate", nullable = false)
-    private Integer rate;
+    @Column(name = "rateproduto", nullable = false)
+    private Double rateproduto;
 
-    public Integer getRate() {
-        return rate;
+    public Double getRateproduto() {
+        return rateproduto;
     }
 
-    public void setRate(Integer rate) {
-        this.rate = rate;
+    public void setRateproduto(Double rateproduto) {
+        this.rateproduto = rateproduto;
     }
 
-    public Integer getIdProduto() {
-        return idProduto;
+    public Double getRateloja() {
+        return rateloja;
     }
 
-    public void setIdProduto(Integer idProduto) {
-        this.idProduto = idProduto;
+    public void setRateloja(Double rateloja) {
+        this.rateloja = rateloja;
     }
 
-    public Integer getIdUtilizador() {
-        return idUtilizador;
+    public Lista_compras getIdLista() {
+        return idLista;
     }
 
-    public void setIdUtilizador(Integer idUtilizador) {
-        this.idUtilizador = idUtilizador;
+    public void setIdLista(Lista_compras idLista) {
+        this.idLista = idLista;
     }
 
-    public Integer getId_rating() {
-        return id_rating;
+    public Integer getIdrating() {
+        return idrating;
     }
 
-    public void setId_rating(Integer id_rating) {
-        this.id_rating = id_rating;
+    public void setId(Integer id) {
+        this.idrating = id;
     }
 }

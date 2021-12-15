@@ -6,22 +6,24 @@ import javax.persistence.*;
 @Table(name = "regiao")
 public class Regiao {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_regiao", nullable = false)
-    private Integer id_regiao;
+    private Integer idregiao;
 
     @Column(name = "nome_regiao", nullable = false, length = 30)
     private String nomeRegiao;
 
-    @Column(name = "id_pais", nullable = false)
-    private Integer idPais;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_pais", nullable = false)
+    private Pais idPais;
 
-    public Integer getIdPais() {
+    public Pais getIdPais() {
         return idPais;
     }
 
-    public void setIdPais(Integer idPais) {
+    public void setIdPais(Pais idPais) {
         this.idPais = idPais;
     }
 
@@ -33,11 +35,11 @@ public class Regiao {
         this.nomeRegiao = nomeRegiao;
     }
 
-    public Integer getId_regiao() {
-        return id_regiao;
+    public Integer getIdregiao() {
+        return idregiao;
     }
 
-    public void setId_regiao(Integer id_regiao) {
-        this.id_regiao = id_regiao;
+    public void setId(Integer id) {
+        this.idregiao = id;
     }
 }

@@ -44,7 +44,7 @@ public class ProdutoController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Produto saveProduto(@RequestBody Produto produto) {
         Produto savedProduto = produtoRepository.save(produto);
-        logger.info("Saving produto with id " + savedProduto.getId_produto());
+        logger.info("Saving produto with id " + savedProduto.getIdproduto());
         return savedProduto;
     }
 

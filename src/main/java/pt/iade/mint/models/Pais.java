@@ -6,10 +6,11 @@ import javax.persistence.*;
     @Table(name = "pais")
 public class Pais {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_pais", nullable = false)
-    private Integer id_pais;
+    private Integer idpais;
 
     @Column(name = "nome_pais", nullable = false, length = 30)
     private String nomePais;
@@ -22,11 +23,11 @@ public class Pais {
         this.nomePais = nomePais;
     }
 
-    public Integer getId_pais() {
-        return id_pais;
+    public Integer getIdpais() {
+        return idpais;
     }
 
-    public void setId_pais(Integer id_pais) {
-        this.id_pais = id_pais;
+    public void setId(Integer id) {
+        this.idpais = id;
     }
 }

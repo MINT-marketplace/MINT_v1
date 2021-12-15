@@ -6,38 +6,41 @@ import javax.persistence.*;
 @Table(name = "loja_prod_enc")
 public class Loja_prod_enc {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_loja_prod_enc", nullable = false)
-    private Integer id_loja_prod_enc;
+    private Integer idlojaprodenc;
 
-    @Column(name = "id_lista", nullable = false)
-    private Integer idLista;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_lista", nullable = false)
+    private Lista_compras idLista;
 
-    @Column(name = "id_encomenda", nullable = false)
-    private Integer idEncomenda;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_encomenda", nullable = false)
+    private Encomenda idEncomenda;
 
-    public Integer getIdEncomenda() {
+    public Encomenda getIdEncomenda() {
         return idEncomenda;
     }
 
-    public void setIdEncomenda(Integer idEncomenda) {
+    public void setIdEncomenda(Encomenda idEncomenda) {
         this.idEncomenda = idEncomenda;
     }
 
-    public Integer getIdLista() {
+    public Lista_compras getIdLista() {
         return idLista;
     }
 
-    public void setIdLista(Integer idLista) {
+    public void setIdLista(Lista_compras idLista) {
         this.idLista = idLista;
     }
 
-    public Integer getId() {
-        return id_loja_prod_enc;
+    public Integer getIdlojaprodenc() {
+        return idlojaprodenc;
     }
 
-    public void setId_loja_prod_enc(Integer id_loja_prod_enc) {
-        this.id_loja_prod_enc = id_loja_prod_enc;
+    public void setId(Integer id) {
+        this.idlojaprodenc = id;
     }
 }

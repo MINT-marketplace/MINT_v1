@@ -44,7 +44,7 @@ public class Loja_prod_encController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Loja_prod_enc saveLoja_prod_enc(@RequestBody Loja_prod_enc loja_prod_enc) {
         Loja_prod_enc savedLoja_prod_enc = loja_prod_encRepository.save(loja_prod_enc);
-        logger.info("Saving loja_prod_enc with id " + savedLoja_prod_enc.getId());
+        logger.info("Saving loja_prod_enc with id " + savedLoja_prod_enc.getIdlojaprodenc());
         return savedLoja_prod_enc;
     }
 

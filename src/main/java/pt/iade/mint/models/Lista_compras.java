@@ -6,19 +6,19 @@ import javax.persistence.*;
 @Table(name = "lista_compras")
 public class Lista_compras {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_lista", nullable = false)
-    private Integer id_lista;
+    private Integer idlista;
 
-    @Column(name = "id_produto", nullable = false)
-    private Integer idProduto;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_produto", nullable = false)
+    private Produto idProduto;
 
-    @Column(name = "id_produtor", nullable = false)
-    private Integer idProdutor;
-
-    @Column(name = "id_rating", nullable = false)
-    private Integer idRating;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_produtor", nullable = false)
+    private Produtor idProdutor;
 
     @Column(name = "quantidade", nullable = false)
     private Integer quantidade;
@@ -42,35 +42,27 @@ public class Lista_compras {
         this.quantidade = quantidade;
     }
 
-    public Integer getIdRating() {
-        return idRating;
-    }
-
-    public void setIdRating(Integer idRating) {
-        this.idRating = idRating;
-    }
-
-    public Integer getIdProdutor() {
+    public Produtor getIdProdutor() {
         return idProdutor;
     }
 
-    public void setIdProdutor(Integer idProdutor) {
+    public void setIdProdutor(Produtor idProdutor) {
         this.idProdutor = idProdutor;
     }
 
-    public Integer getIdProduto() {
+    public Produto getIdProduto() {
         return idProduto;
     }
 
-    public void setIdProduto(Integer idProduto) {
+    public void setIdProduto(Produto idProduto) {
         this.idProduto = idProduto;
     }
 
-    public Integer getId() {
-        return id_lista;
+    public Integer getIdlista() {
+        return idlista;
     }
 
     public void setId(Integer id) {
-        this.id_lista = id_lista;
+        this.idlista = id;
     }
 }

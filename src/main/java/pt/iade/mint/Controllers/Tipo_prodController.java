@@ -44,7 +44,7 @@ public class Tipo_prodController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Tipo_prod saveTipo_prod(@RequestBody Tipo_prod tipo_prod) {
         Tipo_prod savedTipo_prod = tipo_prodRepository.save(tipo_prod);
-        logger.info("Saving tipo_prod with id " + savedTipo_prod.getId_tipo_prod());
+        logger.info("Saving tipo_prod with id " + savedTipo_prod.getIdtipoprod());
         return savedTipo_prod;
     }
 

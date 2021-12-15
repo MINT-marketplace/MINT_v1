@@ -44,7 +44,7 @@ public class RatingController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Rating saveRating(@RequestBody Rating rating) {
         Rating savedRating = ratingRepository.save(rating);
-        logger.info("Saving rating with id " + savedRating.getId_rating());
+        logger.info("Saving rating with id " + savedRating.getIdrating());
         return savedRating;
     }
 

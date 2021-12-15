@@ -7,16 +7,23 @@ import java.time.LocalDate;
 @Table(name="utilizador")
 public class Utilizador {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_utilizador", nullable = false)
-    private Integer id_utilizador;
+    private Integer idutilizador;
 
     @Column(name = "utilizador_nome", nullable = false, length = 60)
     private String utilizadorNome;
 
     @Column(name = "utilizador_regiao", length = 30)
     private String utilizadorRegiao;
+
+    @Column(name = "utilizador_morada", length = 30)
+    private String utilizadorMorada;
+
+    @Column(name = "utilizador_codpostal", length = 8)
+    private String utilizadorCodpostal;
 
     @Column(name = "utilizador_sexo", nullable = false, length = 1)
     private String utilizadorSexo;
@@ -62,6 +69,22 @@ public class Utilizador {
         this.utilizadorSexo = utilizadorSexo;
     }
 
+    public String getUtilizadorCodpostal() {
+        return utilizadorCodpostal;
+    }
+
+    public void setUtilizadorCodpostal(String utilizadorCodpostal) {
+        this.utilizadorCodpostal = utilizadorCodpostal;
+    }
+
+    public String getUtilizadorMorada() {
+        return utilizadorMorada;
+    }
+
+    public void setUtilizadorMorada(String utilizadorMorada) {
+        this.utilizadorMorada = utilizadorMorada;
+    }
+
     public String getUtilizadorRegiao() {
         return utilizadorRegiao;
     }
@@ -78,11 +101,11 @@ public class Utilizador {
         this.utilizadorNome = utilizadorNome;
     }
 
-    public Integer getId_utilizador() {
-        return id_utilizador;
+    public Integer getIdutilizador() {
+        return idutilizador;
     }
 
-    public void setId_utilizador(Integer id_utilizador) {
-        this.id_utilizador = id_utilizador;
+    public void setId(Integer id) {
+        this.idutilizador = id;
     }
 }

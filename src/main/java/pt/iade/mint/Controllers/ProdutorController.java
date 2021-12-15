@@ -43,7 +43,7 @@ public class ProdutorController {
     @PostMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Produtor saveProdutor(@RequestBody Produtor produtor) {
         Produtor savedProdutor = produtorRepository.save(produtor);
-        logger.info("Saving produtor with id " + savedProdutor.getId_loja());
+        logger.info("Saving produtor with id " + savedProdutor.getIdloja());
         return savedProdutor;
     }
 
