@@ -11,7 +11,7 @@ public class Produto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_produto", nullable = false)
-    private Integer idproduto;
+    private Integer Idproduto;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_tipo_prod", nullable = false)
@@ -21,8 +21,9 @@ public class Produto {
     @JoinColumn(name = "id_intolerancia", nullable = false)
     private Intolerancia idIntolerancia;
 
-    @Column(name = "id_loja", nullable = false, length = 60)
-    private String idLoja;
+    @ManyToOne(optional = false)
+    @JoinColumn(name = "id_loja", nullable = false)
+    private Produtor idLoja;
 
     @Column(name = "produto_nome", nullable = false, length = 60)
     private String produtoNome;
@@ -46,11 +47,11 @@ public class Produto {
         this.produtoNome = produtoNome;
     }
 
-    public String getIdLoja() {
+    public Produtor getIdLoja() {
         return idLoja;
     }
 
-    public void setIdLoja(String idLoja) {
+    public void setIdLoja(Produtor idLoja) {
         this.idLoja = idLoja;
     }
 
@@ -71,10 +72,10 @@ public class Produto {
     }
 
     public Integer getIdproduto() {
-        return idproduto;
+        return Idproduto;
     }
 
     public void setId(Integer id) {
-        this.idproduto = id;
+        this.Idproduto = id;
     }
 }

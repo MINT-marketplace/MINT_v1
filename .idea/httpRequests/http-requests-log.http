@@ -1,0 +1,288 @@
+GET http://localhost:8081/api/produtor
+
+<> 2021-12-16T101308.200.json
+
+###
+
+GET http://localhost:8081/api/loja_prod_enc
+
+<> 2021-12-16T101253.200.json
+
+###
+
+GET http://localhost:8081/api/lista_compras
+
+<> 2021-12-16T101229.200.json
+
+###
+
+GET http://localhost:8081/api/intolerancia
+
+<> 2021-12-16T101215.200.json
+
+###
+
+GET http://localhost:8081/api/encomenda
+
+<> 2021-12-16T101158.200.json
+
+###
+
+GET http://localhost:8081/api/produto/2
+
+<> 2021-12-16T101137.200.json
+
+###
+
+GET http://localhost:8081/api/produto/1
+
+<> 2021-12-16T100525.200.json
+
+###
+
+GET http://localhost:8081/api/produto
+
+<> 2021-12-16T100514.200.json
+
+###
+
+GET http://localhost:8081/api/produto/2
+
+<> 2021-12-16T092810.200.json
+
+###
+
+GET http://localhost:8081/api/encomenda/1
+
+<> 2021-12-16T092743.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-12-15T184226.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-12-15T184215.200.json
+
+###
+
+GET http://localhost:8081/api/intolerancia/1
+
+<> 2021-12-15T184205.200.json
+
+###
+
+GET http://localhost:8081/api/querys/encomendastotais/brunopreto@gmail.com/BrunoPreto
+
+<> 2021-12-10T220907.200.json
+
+###
+
+GET http://localhost:8081/api/querys/encomendastotais/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T220759.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-12-10T212657.200.json
+
+###
+
+GET http://localhost:8081/api/querys/teste/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T211834.200.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T211516.200.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T205843.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T205641.500.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-12-10T205634.200.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T205547.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T205515.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-10T205027.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogaria123
+
+<> 2021-12-10T204947.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/João%20Garia/Joaogaria123
+
+<> 2021-12-10T204853.404.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/{{z}}/{{z}}
+
+###
+
+GET http://localhost:8081/api/encomenda/2
+
+<> 2021-11-26T092620.200.json
+
+###
+
+GET http://localhost:8081/api/encomenda/4
+
+<> 2021-11-26T092614.404.json
+
+###
+
+GET http://localhost:8081/api/encomenda/1
+
+<> 2021-11-24T092216.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-24T091803.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-24T091556.404.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-24T085638.404.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-24T085632.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-24T085417.404.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-24T085406.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-24T085316.404.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-24T085311.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+###
+
+GET http://localhost:8081/api/tipo_prod
+
+<> 2021-11-23T224000.200.json
+
+###
+
+GET http://localhost:8081/api/produto
+
+<> 2021-11-23T223908.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-23T223653.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+<> 2021-11-23T081941.404.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-23T081933.200.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+###
+
+GET http://localhost:8081/api/utilizador/1
+
+###
+
+GET http://localhost:8081/api/utilizador/10
+
+<> 2021-11-19T200153.500.json
+
+###
+
+GET http://localhost:8081/api/utilizador
+
+<> 2021-11-19T200112.200.json
+
+###
+
