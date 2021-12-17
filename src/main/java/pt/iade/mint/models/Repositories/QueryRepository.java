@@ -17,9 +17,6 @@ public interface QueryRepository extends CrudRepository<Utilizador, Integer> {
     @Query(value = "select * from utilizador where utilizador_email = :nome and utilizador_pass = :pass", nativeQuery = true)
     Iterable<String> teste(String nome, String pass);
 
-    @Query(value = "select * from produto", nativeQuery = true)
-    Iterable<Produto> produto_list();
-
     @Query(value = encomenda + " where utilizador_email = :nome and utilizador_pass = :pass", nativeQuery = true)
     Iterable<String> encomendas(String nome, String pass);
 

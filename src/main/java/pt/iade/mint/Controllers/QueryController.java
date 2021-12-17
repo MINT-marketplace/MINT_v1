@@ -33,12 +33,6 @@ public class QueryController {
         return queryRepository.teste(nome, pass);
     }
 
-    @GetMapping(path = "/produtolist/", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<Produto> get_produtolist() {
-        logger.info("Sending bio from route");
-        return queryRepository.produto_list();
-    }
-
     @GetMapping(path = "/encomendastotais/{nome:[.-z]+}/{pass:[0-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<String> get_encomendas(@PathVariable("nome") String nome, @PathVariable("pass") String pass) {
         logger.info("Sending bio from route nome: ,pass:" + nome + pass);
