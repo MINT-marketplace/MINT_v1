@@ -1,3 +1,27 @@
+GET http://localhost:8081/api/querys/exite/João%20Garcia/Jonasjoao123
+
+<> 2021-12-17T104517.404.json
+
+###
+
+GET http://localhost:8081/api/querys/produtolist/
+
+<> 2021-12-17T100755.500.json
+
+###
+
+GET http://localhost:8081/api/querys/produtolist/
+
+<> 2021-12-17T100537.200.json
+
+###
+
+GET http://localhost:8081/api/querys/produtolist/
+
+<> 2021-12-17T100245.500.json
+
+###
+
 GET http://localhost:8081/api/produtor
 
 <> 2021-12-16T101308.200.json
@@ -263,26 +287,6 @@ GET http://localhost:8081/api/utilizador/1
 GET http://localhost:8081/api/utilizador
 
 <> 2021-11-23T081933.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-###
-
-GET http://localhost:8081/api/utilizador/10
-
-<> 2021-11-19T200153.500.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-19T200112.200.json
 
 ###
 

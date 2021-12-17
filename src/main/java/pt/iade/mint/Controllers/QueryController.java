@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import pt.iade.mint.models.Produto;
 import pt.iade.mint.models.Utilizador;
 import pt.iade.mint.models.Repositories.QueryRepository;
 
@@ -30,6 +31,12 @@ public class QueryController {
     public Iterable<String> get_teste(@PathVariable("nome") String nome, @PathVariable("pass") String pass) {
         logger.info("Sending bio from route nome: ,pass:" + nome + pass);
         return queryRepository.teste(nome, pass);
+    }
+
+    @GetMapping(path = "/produtolist/", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Produto> get_produtolist() {
+        logger.info("Sending bio from route");
+        return queryRepository.produto_list();
     }
 
     @GetMapping(path = "/encomendastotais/{nome:[.-z]+}/{pass:[0-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
