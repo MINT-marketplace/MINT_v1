@@ -22,10 +22,10 @@ public class QueryController {
     @Autowired
     private QueryRepository queryRepository;
 
-    @GetMapping(path = "/exite/{nome:[.-z]+}/{pass:[0-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<String> getexit_userBypass_nome(@PathVariable("nome") String nome, @PathVariable("pass") String pass) {
-        logger.info("Sending bio from route nome: ,pass:" + nome + pass);
-        return queryRepository.Exite_utilizador(nome, pass);
+    @GetMapping(path = "/existe/{nome:[.-z]+}/{pass:[.-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<String> getexit_userBypass_nome(@PathVariable("nome") String nome,@PathVariable("pass") String pass) {
+        logger.info("Sending bio from route nome: ,pass:" + nome +pass);
+        return queryRepository.Exite_utilizador(nome,pass);
     }
 
     @GetMapping(path = "/teste/{nome:[.-z]+}/{pass:[0-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -53,5 +53,14 @@ public class QueryController {
         logger.info("Sending bio from rout" );
         return queryRepository.rating_produtos();
     }
+
+
+    @GetMapping(path = "/utilizador_info/{nome:[.-z]+}/{pass:[.-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Utilizador> get_utilizador_info(@PathVariable("nome") String nome,@PathVariable("pass") String pass) {
+        logger.info("Sending bio from route nome: ,pass:" + nome +pass);
+        return queryRepository.utilizador_info(nome,pass);
+    }
+
+
 
 }

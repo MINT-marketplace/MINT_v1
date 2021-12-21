@@ -1,3 +1,91 @@
+GET http://localhost:8081/api/querys/existe/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163925.200.json
+
+###
+
+GET http://localhost:8081/api/querys/utilizador_info/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163921.200.json
+
+###
+
+GET http://localhost:8081/api/querys/utilizador_info/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163503.200.json
+
+###
+
+GET http://localhost:8081/api/querys/existe/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163459.500.json
+
+###
+
+GET http://localhost:8081/api/querys/utilizador_info/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163452.200.json
+
+###
+
+GET http://localhost:8081/api/querys/existe/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T163049.500.json
+
+###
+
+GET http://localhost:8081/api/querys/existe/jonas4766@gmail.com/1
+
+<> 2021-12-21T163042.500.json
+
+###
+
+GET http://localhost:8081/api/querys/existe/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T162614.500.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T162544.404.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T162539.404.json
+
+###
+
+GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
+
+<> 2021-12-21T162433.500.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_produto
+
+<> 2021-12-21T124957.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T124837.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T083447.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+###
+
 GET http://localhost:8081/api/querys/rating_lojas
 
 <> 2021-12-21T005739.200.json
@@ -205,90 +293,6 @@ GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogarcia123
 GET http://localhost:8081/api/querys/exite/jonas4766@gmail.com/Joaogaria123
 
 <> 2021-12-10T204947.500.json
-
-###
-
-GET http://localhost:8081/api/querys/exite/João%20Garia/Joaogaria123
-
-<> 2021-12-10T204853.404.json
-
-###
-
-GET http://localhost:8081/api/querys/exite/{{z}}/{{z}}
-
-###
-
-GET http://localhost:8081/api/encomenda/2
-
-<> 2021-11-26T092620.200.json
-
-###
-
-GET http://localhost:8081/api/encomenda/4
-
-<> 2021-11-26T092614.404.json
-
-###
-
-GET http://localhost:8081/api/encomenda/1
-
-<> 2021-11-24T092216.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-24T091803.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-24T091556.404.json
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-24T085638.404.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-24T085632.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-24T085417.404.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-24T085406.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-24T085316.404.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-24T085311.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-###
-
-GET http://localhost:8081/api/utilizador/1
 
 ###
 
