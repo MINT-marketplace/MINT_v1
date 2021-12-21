@@ -1,7 +1,6 @@
 package pt.iade.mint.models.Repositories;
 
-import pt.iade.mint.models.Produto;
-import pt.iade.mint.models.Utilizador;
+import pt.iade.mint.models.*;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
@@ -19,5 +18,18 @@ public interface QueryRepository extends CrudRepository<Utilizador, Integer> {
 
     @Query(value = encomenda + " where utilizador_email = :nome and utilizador_pass = :pass", nativeQuery = true)
     Iterable<String> encomendas(String nome, String pass);
+
+    @Query(value = "select id_loja, avg(rateloja) from rating\n" +
+            "inner join lista_compras on lista_compras.id_lista = rating.id_lista\n" +
+            "inner join produtor on lista_compras.id_produtor= produtor.id_loja\n" +
+            "group by id_loja", nativeQuery = true)
+    Iterable<String> rating_lojas();
+
+    @Query(value = "select produto.id_produto, avg(rateproduto) from rating\n" +
+            "inner join lista_compras on lista_compras.id_lista = rating.id_lista\n" +
+            "inner join produto on lista_compras.id_produto= produto.id_produto\n" +
+            "group by produto.id_produto", nativeQuery = true)
+    Iterable<String> rating_produtos();
+
 
 }

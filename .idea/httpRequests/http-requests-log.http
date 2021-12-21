@@ -1,3 +1,39 @@
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T005739.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T005724.500.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T005654.500.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T005641.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_produto
+
+<> 2021-12-21T005535.200.json
+
+###
+
+GET http://localhost:8081/api/querys/rating_lojas
+
+<> 2021-12-21T005514.200.json
+
+###
+
 GET http://localhost:8081/api/querys/exite/João%20Garcia/Jonasjoao123
 
 <> 2021-12-17T104517.404.json
@@ -253,40 +289,6 @@ GET http://localhost:8081/api/utilizador
 ###
 
 GET http://localhost:8081/api/utilizador/1
-
-###
-
-GET http://localhost:8081/api/tipo_prod
-
-<> 2021-11-23T224000.200.json
-
-###
-
-GET http://localhost:8081/api/produto
-
-<> 2021-11-23T223908.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-23T223653.200.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-###
-
-GET http://localhost:8081/api/utilizador/1
-
-<> 2021-11-23T081941.404.json
-
-###
-
-GET http://localhost:8081/api/utilizador
-
-<> 2021-11-23T081933.200.json
 
 ###
 

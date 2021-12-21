@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import pt.iade.mint.models.Produto;
+import pt.iade.mint.models.Rating;
 import pt.iade.mint.models.Utilizador;
 import pt.iade.mint.models.Repositories.QueryRepository;
 
@@ -40,5 +41,17 @@ public class QueryController {
     }
 
 
+    @GetMapping(path = "/rating_lojas", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<String> get_rating_lojas() {
+        logger.info("Sending bio from route " );
+        return queryRepository.rating_lojas();
+    }
+
+
+    @GetMapping(path = "/rating_produto", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<String> get_rating_produtos() {
+        logger.info("Sending bio from rout" );
+        return queryRepository.rating_produtos();
+    }
 
 }
