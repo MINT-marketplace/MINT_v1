@@ -34,5 +34,8 @@ public interface QueryRepository extends CrudRepository<Utilizador, Integer> {
             "group by produto.id_produto", nativeQuery = true)
     Iterable<String> rating_produtos();
 
+    @Query(value = "select regiao_existe(:regiao,:pais)", nativeQuery = true)
+    Iterable<String> Exite_regiao(String regiao, String pais);
+
 
 }

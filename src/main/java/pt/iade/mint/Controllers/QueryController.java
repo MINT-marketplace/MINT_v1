@@ -61,6 +61,10 @@ public class QueryController {
         return queryRepository.utilizador_info(nome,pass);
     }
 
-
+    @GetMapping(path = "/existeregiao/{regiao:[A-z]+}/{pais:[A-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<String> getexit_regiaoBypais_regiao(@PathVariable("regiao") String regiao,@PathVariable("pais") String pais) {
+        logger.info("Sending bio from route nome: ,pass:" + regiao +pais);
+        return queryRepository.Exite_regiao(regiao,pais);
+    }
 
 }
