@@ -37,7 +37,7 @@ public interface QueryRepository extends CrudRepository<Utilizador, Integer> {
     @Query(value = "select regiao_existe(:regiao,:pais)", nativeQuery = true)
     Iterable<String> Exite_regiao(String regiao, String pais);
 
-    @Query(value = "select lista_compras.precot,quantidade,produto_nome,produto_preco from loja_prod_enc inner join encomenda on loja_prod_enc.id_encomenda = encomenda.id_encomenda inner join utilizador on encomenda.id_utilizador = utilizador.id_utilizador inner join lista_compras on loja_prod_enc.id_lista = lista_compras.id_lista inner join produto on lista_compras.id_produto = produto.id_produto where utilizador_email = :nome and utilizador_pass = :pass", nativeQuery = true)
+    @Query(value = "select lista_compras.precot,quantidade,produto_nome,produto_preco,produtor.loja_nome,pais.nome_pais from loja_prod_enc inner join encomenda on loja_prod_enc.id_encomenda = encomenda.id_encomenda inner join utilizador on encomenda.id_utilizador = utilizador.id_utilizador inner join lista_compras on loja_prod_enc.id_lista = lista_compras.id_lista inner join produto on lista_compras.id_produto = produto.id_produto inner join produtor on lista_compras.id_produtor = produtor.id_loja inner join regiao on produtor.id_regiao = regiao.id_regiao inner join pais on regiao.id_pais = pais.id_pais where utilizador_email = :nome and utilizador_pass = :pass", nativeQuery = true)
     Iterable<String> carrinho(String nome, String pass);
 
 
