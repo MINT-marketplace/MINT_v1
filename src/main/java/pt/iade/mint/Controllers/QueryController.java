@@ -67,4 +67,10 @@ public class QueryController {
         return queryRepository.Exite_regiao(regiao,pais);
     }
 
+    @GetMapping(path = "/carrinho/{nome:[.-z]+}/{pass:[0-z]+}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<String> get_carrinho(@PathVariable("nome") String nome, @PathVariable("pass") String pass) {
+        logger.info("Sending bio from route nome: ,pass:" + nome + pass);
+        return queryRepository.carrinho(nome, pass);
+    }
+
 }
